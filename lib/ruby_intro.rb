@@ -37,7 +37,8 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  return true if s=="0"
+  /^[10]*00$/.match(s) != nil
 end
 
 # Part 3
